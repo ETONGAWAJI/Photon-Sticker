@@ -484,7 +484,7 @@ body {
 
 /* Media queries for responsiveness */
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     .net-div {
         display: grid;
         align-items: center;
