@@ -1,0 +1,1722 @@
+:root {
+    --main-color: #ffff;
+    --obs: #ff8d8d;
+    --bg: #fff0f0;
+    --digit: #ff8383;
+    --button: #ff6b6b;
+    --black: #000000;
+    --star: #fdc700;
+    --grey: #3a3a3a;
+    --lightgrey: #eaeaea;
+    --blue: #0078d7;
+}
+  
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.net-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 52px 475px 24px 475px;
+    padding: 7px 0px 7px 0px;
+    background-color: var(--main-color);
+    border-radius: 17px;
+    box-shadow: 0px 2px 10px -9px var(--black);
+}
+
+.net-div > h2 {
+    font-size: 25px;
+    text-transform: lowercase;
+    font-weight: 500;
+    text-indent: 17px;
+    padding-bottom: 5px;
+}
+
+.net-div > h2 > span {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--digit);
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px ;
+}
+
+.sample {
+    height: 30%;
+    width: 30%;
+    margin: 0px 0px 0px 330px;
+}
+
+.container > h1 {
+    text-transform: lowercase;
+    font-size: 41px;
+    font-weight: 900;
+    letter-spacing: -1.2px;
+    word-spacing: -5px;
+    line-height: 1.2;
+    text-align: center;
+    border: 3px solid var(--black);
+    border-radius: 13px;
+    transform: rotate(-2deg);
+    background: var(--main-color);
+    padding: 11px 30px 15px 30px;
+    margin: -53px 320px 0px 320px;
+}
+
+.upfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--button);
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+    margin: 0px 460px 20px 450px;
+    padding: 20px 80px 20px 80px;
+    box-shadow: 0px 2px 10px -3px var(--button);
+    transition: ease-in-out 0.3s;
+    transform: translateX(7px);
+    overflow: hidden;
+}
+
+
+.upfile:hover {
+    transform:scale(1.03);
+
+
+}
+
+.upfile:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease-in-out;  
+}
+
+.upfile:hover::before {
+    left: 100%;
+}
+  
+
+
+#upfiles {
+    background-color: var(--button);
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 650;
+    text-transform: lowercase;
+}
+
+
+.question {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 20px -9px var(--black);
+    padding: 30px 60px 30px 60px;
+    margin: 40px 445px 40px 445px;
+}
+
+.question > h1 {
+    font-size: 27px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: lowercase;
+    line-height: 1.2;
+    padding-bottom: 20px;
+
+}
+
+.question > h1 > span {
+    text-align: center;
+    text-transform: lowercase;
+    color: var(--obs);
+    font-weight: 800;
+    
+}
+
+.question > h3 {
+    text-align: center;
+    background-color: var(--button);
+    color: var(--main-color);
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 47px 0px 47px;
+}
+
+.chef {
+    width: 16px;
+    height: 19px;
+    position: relative;
+    animation: move-up-down 1.1s ease-in infinite;
+    margin-top: 15px;
+}
+
+@keyframes move-up-down {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px); /* move up */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.comment-box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    margin: 0px 445px 20px 445px;
+    padding: 20px 15px 20px 15px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 15px -9px var(--black);
+
+}
+
+.comment-box:hover {
+    box-shadow: 0px 2px 22px -9px var(--black);
+}
+
+.comment-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    margin-left: 10px;
+}
+
+.profile > img {
+    height: 50%;
+    width: 50%;
+    background-color: var(--main-color);
+    box-shadow: 0px 2px 15px -9px var(--black);
+    border-radius: 10px;
+}
+
+.rating > .star {
+    font-size: 13px;
+    margin-left: 7px;
+    color: var(--star);
+} 
+
+.rating > p {
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: 500;
+    padding-top: 4px;
+    margin-left: -65px;
+    color: var(--grey);
+
+}
+
+.r-text > p {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+    padding-right: 5px;
+    margin-left: -25px;
+    line-height: 23px;
+    word-spacing: 2px;
+}
+
+.login-button {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    border: 2px solid var(--lightgrey);
+    margin: 30px 510px 70px 510px;
+    padding: 11px 25px 13px 25px;
+}
+
+.login-button:hover {
+    box-shadow: 0px 2px 19px -8px var(--black);
+}
+
+.login-button > a {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey);
+    background-color: var(--main-color);
+}
+
+.login-button > a > img {
+    width: 8%;
+    height: 8%;
+    margin: 5px 7px 0px 0px;
+}
+
+
+/* Login-popup starts  */
+
+.wellback {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.wellback-content {
+    position: absolute;
+    top: 25%;
+    left: 36%;
+    bottom: 25%;
+    background-color: var(--main-color);
+    padding: 1px;
+    border: 3px solid var(--black);
+    border-radius: 25px;
+    text-align: center;
+    width: 355px;
+    max-width: 90%;
+    animation: fadeIn 0.3s ease-in forwards;
+}
+
+.wellback-content > h2 {
+    font-size: 25px;
+    text-transform: lowercase;
+    font-weight: 800;
+    word-spacing: 1px;
+    letter-spacing: -0.5px;
+    margin-top: 17px;
+    cursor: pointer;
+
+}
+
+.wellback-content > p {
+    font-size: 15px;
+    color: var(--grey);
+    text-transform: lowercase;
+    word-spacing: 1px;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+.wellback-content > input {
+    font-size: 17px;
+    text-transform: lowercase;
+    border: 1px solid var(--lightgrey);
+    border-radius: 12px;
+    background-color:rgba(255, 141, 141, 0.1);
+    color: var(--grey);
+    padding: 15px 10px;
+    padding-right: 90px;
+    margin: 20px 0px;
+    transform: translateX(0px);
+}
+
+.wellback-content > input:focus {
+    border: 2px solid var(--button);
+}
+
+.cont-email {
+    font-size: 17.5px;
+    font-weight: 700;
+    line-height: 0.1px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    border: 2px solid Linear-gradient(to right, var(--button), var(--obs));
+    border-radius: 35px;
+    background-color: var(--digit);
+    padding: 30px 55px 30px 55px;
+    box-shadow: 0px 2px 15px -9px var(--black);
+}
+
+.wellback-content > img {
+    position: absolute;
+    top: -5%;
+    left: 93%;
+    bottom: 25%;
+    width: 32px;
+    height: 32px;
+    background: var(--main-color);
+    border: 2.5px solid var(--black);
+    border-radius: 50%;
+    padding: 2.5px;
+}
+
+.wellback-content > img:hover {
+    transform: scale(1.1);
+}
+
+.wellback.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    opacity: 1;
+    visibility: visible;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+/* Login-popup ends  */
+
+.contact-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    margin: -55px 445px 90px 445px;
+    padding: 30px 20px 15px 20px;
+    box-shadow: 0px 2px 15px -9px var(--black);
+}
+
+.contact_us {
+   text-align: center;
+}
+
+.contact_us > h1 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.contact_us > p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-transform: none;
+}
+
+.email-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.email-us > h2 {
+    font-size: 13.5px;
+    letter-spacing: 0.8px;
+}
+
+.email-us > img {
+    width: 3%;
+    height: 3%;
+    background-color: var(--blue);
+    padding: 5px;
+    margin-left: 3px;
+}
+
+.d-more {
+    font-size: 15px;
+    text-transform: none;
+    margin-bottom: 30px;
+}
+
+.hey > a {
+    font-size: 18.5px;
+    font-weight: 600;
+    line-height: 0.1px;
+    color: var(--main-color);
+    text-transform: none;
+    border: 2px solid Linear-gradient(to right, var(--button), var(--obs));
+    border-radius: 35px;
+    background-color: var(--digit);
+    padding: 12px 25px 12px 25px;
+    box-shadow: 0px 2px 15px -9px var(--black);
+    
+}
+
+.hey:hover {
+    transform:scale(1.03)
+}
+
+
+
+
+/* Media queries for responsiveness */
+
+@media (max-width: 1200px) {
+    .net-div {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 470px 20px 470px;
+    }
+
+    .net-div > h2 {
+        font-size: 20px;
+    }
+
+    .net-div > h2 > span {
+        font-size: 27px;
+    }
+
+    .sample {
+        height: 22%;
+        width: 22%;
+        margin: 0px 0px 0px 430px;
+    }
+
+    .container > h1 {
+        text-transform: lowercase;
+        font-size: 36px;
+        margin: -53px 410px 0px 410px;
+    }
+
+
+    .upfile {
+        padding: 20px 80px 20px 80px;
+        margin: 0px 400px 20px 440px;
+    }
+
+    #upfiles {
+        font-size: 16px;
+    }
+
+    
+    .question {
+        padding: 30px 50px 30px 50px;
+        margin: 40px 440px 40px 440px;
+    }
+
+    .question > h1 {
+        font-size: 20px;
+        line-height: 0.7;
+        padding-bottom: 10px;
+    }
+
+    .question > h3 {
+        font-size: 8px;
+        padding: 5px 10px 5px 10px;
+        margin: 7px 37px 0px 37px;
+    }
+
+    .chef {
+        width: 11px;
+        height: 14px;
+    }
+
+    .comment-box {
+      margin: 0px 440px 20px 440px;
+    }
+
+    .r-text > p {
+        font-size: 10.5px;
+        line-height: 18px;
+        margin-left: -35px;
+    }
+
+    .profile > img {
+        height: 40%;
+        width: 40%;
+    }
+    
+    .rating > .star {
+        font-size: 10px;
+        margin-left: 7px;
+        color: var(--star);
+    } 
+    
+    .rating > p {
+        font-size: 9.5px;
+ 
+    }
+    
+    .login-button {
+        padding: 11px 25px 13px 25px;
+        margin: 30px 500px 70px 500px;
+    }
+
+    .login-button > a {
+        font-size: 12px;
+    }
+    
+    .login-button > a > img {
+        width: 8%;
+        height: 8%;
+        margin: 3px 7px 0px 0px;
+    }
+
+    .contact-container {
+        padding: 30px 20px 10px 20px;
+        margin: -55px 440px 90px 440px;
+    }
+
+    .contact_us > h1 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    
+    .contact_us > p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .email-us > h2 {
+        font-size: 10px;
+    }
+    
+    .email-us > img {
+        width: 2%;
+        height: 2%;
+    }
+    
+    .d-more {
+        font-size: 11.5px;
+        text-transform: none;
+        margin-bottom: 40px;
+    }
+    
+    .hey > a {
+        font-size: 13.5px;
+    }    
+
+  }
+
+  /* Another Size */
+
+  @media (min-width: 912px) and (max-width: 1199px) {
+    .net-div {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 330px 20px 330px;
+    }
+
+    .net-div > h2 {
+        font-size: 20px;
+    }
+
+    .net-div > h2 > span {
+        font-size: 27px;
+    }
+
+    .sample {
+        height: 27%;
+        width: 27%;
+        margin: 0px 0px 0px 335px;
+    }
+
+    .container > h1 {
+        text-transform: lowercase;
+        font-size: 30px;
+        margin: -53px 330px 0px 330px;
+    }
+
+
+    .upfile {
+        padding: 20px 60px 20px 60px;
+        margin: 0px 300px 20px 305px;
+    }
+
+    #upfiles {
+        font-size: 18px;
+    }
+
+    
+    .question {
+        padding: 30px 20px 30px 20px;
+        margin: 40px 330px 40px 330px;
+    }
+
+    .question > h1 {
+        font-size: 20px;
+        line-height: 0.7;
+        padding-bottom: 10px;
+    }
+
+    .chef {
+        width: 11px;
+        height: 14px;
+    }
+
+    .comment-box {
+        margin: 0px 330px 20px 330px;
+    }
+
+    .r-text > p {
+        font-size: 8px;
+        line-height: 18px;
+        margin-left: -35px;
+    }
+
+    .profile > img {
+        height: 40%;
+        width: 40%;
+    }
+    
+    .rating > .star {
+        font-size: 10px;
+        margin-left: 7px;
+        color: var(--star);
+    } 
+    
+    .rating > p {
+        font-size: 9.5px;
+ 
+    }
+    
+    .login-button {
+        padding: 11px 20px 13px 20px;
+        margin: 30px 360px 70px 360px;
+    }
+
+    .login-button > a {
+        font-size: 11px;
+    }
+    
+    .login-button > a > img {
+        width: 7%;
+        height: 7%;
+        margin: 3px 7px 0px 0px;
+    }
+
+    .contact-container {
+        padding: 30px 20px 10px 20px;
+        margin: -55px 330px 90px 330px;
+    }
+
+    .contact_us > h1 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    
+    .contact_us > p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .email-us > h2 {
+        font-size: 10px;
+    }
+    
+    .email-us > img {
+        width: 2%;
+        height: 2%;
+    }
+    
+    .d-more {
+        font-size: 11.5px;
+        text-transform: none;
+        margin-bottom: 40px;
+    }
+    
+    .hey > a {
+        font-size: 13.5px;
+    }    
+
+  }
+  
+  /* Another Size */
+
+  @media (min-width: 768px) and (max-width: 911px) {
+    .net-div {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 250px 20px 250px;
+    }
+
+    .net-div > h2 {
+        font-size: 20px;
+    }
+
+    .net-div > h2 > span {
+        font-size: 27px;
+    }
+
+    .sample {
+        height: 28%;
+        width: 28%;
+        margin: 0px 0px 0px 270px;
+    }
+
+    .container > h1 {
+        text-transform: lowercase;
+        font-size: 28.5px;
+        margin: -53px 260px 0px 260px;
+    }
+
+
+    .upfile {
+        padding: 20px 55px 20px 55px;
+        margin: 0px 235px 20px 235px;
+    }
+
+    #upfiles {
+        font-size: 18px;
+    }
+
+    
+    .question {
+        padding: 30px 50px 30px 50px;
+        margin: 40px 240px 40px 240px;
+    }
+
+    .question > h1 {
+        font-size: 17px;
+        line-height: 0.7;
+        padding-bottom: 5px;
+    }
+
+    .question > h3 {
+        font-size: 7px;
+        padding: 5px 7px 5px 7px;
+        margin: 7px 32px 0px 32px;
+    }
+
+    .chef {
+        width: 10px;
+        height: 13px;
+        margin-top: 12px;
+    }
+
+    .comment-box {
+      margin: 0px 240px 20px 240px;
+    }
+
+    .r-text > p {
+        font-size: 9.5px;
+        line-height: 15px;
+        margin-left: -40px;
+    }
+
+    .profile > img {
+        height: 35%;
+        width: 35%;
+    }
+    
+    .rating > .star {
+        font-size: 8px;
+        margin-left: 7px;
+        color: var(--star);
+    } 
+    
+    .rating > p {
+        font-size: 7.5px;
+        margin-left: -75px;
+ 
+    }
+    
+    .login-button {
+        padding: 11px 20px 13px 20px;
+        margin: 30px 290px 70px 310px;
+    }
+
+    .login-button > a {
+        font-size: 10px;
+    }
+    
+    .login-button > a > img {
+        width: 7%;
+        height: 7%;
+        margin: 3px 7px 0px 0px;
+    }
+
+    .wellback-content {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        bottom: 20%;
+        background-color: var(--main-color);
+        padding: 1px;
+        border: 3px solid var(--black);
+        border-radius: 25px;
+        text-align: center;
+        width: 355px;
+        max-width: 90%;
+        animation: fadeIn 0.3s ease-in forwards;
+    }
+    
+    .wellback-content > h2 {
+        font-size: 25px;
+        word-spacing: 1px;
+        letter-spacing: -0.5px;
+        margin-top: 17px;
+        cursor: pointer;
+    
+    }
+    
+    .wellback-content > p {
+        font-size: 15px;
+        word-spacing: 1px;
+        margin-top: 5px;
+        cursor: pointer;
+    
+    }
+    
+    .wellback-content > input {
+        font-size: 17px;
+        padding: 15px 10px;
+        padding-right: 90px;
+        margin: 15px 0px;
+        transform: translateX(0px);
+    }
+
+    
+    .cont-email {
+        font-size: 17.5px;
+        font-weight: 700;
+        line-height: 0.1px;
+        padding: 25px 55px 25px 55px;
+        box-shadow: 0px 2px 15px -9px var(--black);
+    }
+    
+    .wellback-content > img {
+        position: absolute;
+        top: -5%;
+        left: 93%;
+        bottom: 25%;
+        padding: 2.5px;
+    }
+
+    .contact-container {
+        padding: 30px 20px 10px 20px;
+        margin: -55px 240px 90px 240px;
+    }
+
+    .contact_us > h1 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    
+    .contact_us > p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .email-us > h2 {
+        font-size: 10px;
+    }
+    
+    .email-us > img {
+        width: 2%;
+        height: 2%;
+    }
+    
+    .d-more {
+        font-size: 11.5px;
+        text-transform: none;
+        margin-bottom: 40px;
+    }
+    
+    .hey > a {
+        font-size: 13.5px;
+    }  
+
+  }
+  
+
+  /* Another Size */
+  
+  @media (min-width: 480px) and (max-width: 767px) {
+    .net-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 120px 20px 120px;
+    }
+
+    .net-div > h2 {
+        font-size: 18px;
+    }
+
+    .net-div > h2 > span {
+        font-size: 25px;
+    }
+
+    .sample {
+        height: 40%;
+        width: 40%;
+        margin: 0px 0px 0px 140px;
+    }
+
+    .container > h1 {
+        text-transform: lowercase;
+        font-size: 27px;
+        margin: -53px 120px 0px 120px;
+    }
+
+
+    .upfile {
+        padding: 20px 40px 20px 40px;
+        margin: -10px 60px 20px 120px;
+    }
+
+    #upfiles {
+        font-size: 16px;
+    }
+
+    
+    .question {
+        padding: 30px 30px 30px 30px;
+        margin: 40px 120px 40px 120px;
+    }
+
+    .question > h1 {
+        font-size: 18px;
+        line-height: 0.7;
+        padding-bottom: 10px;
+    }
+
+    .question > h3 {
+        font-size: 8px;
+        padding: 5px 10px 5px 10px;
+        margin: 7px 37px 0px 37px;
+    }
+
+    .chef {
+        width: 11px;
+        height: 14px;
+    }
+
+    .comment-box {
+      margin: 0px 120px 20px 120px;
+    }
+
+    .r-text > p {
+        font-size: 8px;
+        line-height: 13px;
+        margin-left: -70px;
+    }
+
+    .profile > img {
+        height: 30%;
+        width: 30%;
+    }
+    
+    .rating > .star {
+        font-size: 7px;
+        margin-left: 7px;
+        color: var(--star);
+    } 
+    
+    .rating > p {
+        font-size: 7.5px;
+        margin-left: -85px;
+ 
+    }
+    
+    .login-button {
+        padding: 11px 18px 13px 18px;
+        margin: 30px 160px 70px 170px;
+    }
+
+    .login-button > a {
+        font-size: 9px;
+    }
+    
+    .login-button > a > img {
+        width: 8%;
+        height: 8%;
+        margin: 3px 7px 0px 0px;
+    }
+
+    .wellback-content {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        bottom: 30%;
+        width: 355px;
+        max-width: 60%;
+    }
+
+    .wellback-content > h2 {
+        font-size: 21px;
+        margin-top: 17px;
+        cursor: pointer;
+    
+    }
+    
+    .wellback-content > p {
+        font-size: 10px;
+        word-spacing: 0.3px;
+        margin-top: 5px;
+        cursor: pointer;
+    
+    }
+    
+    .wellback-content > input {
+        font-size: 10px;
+        text-transform: lowercase;
+        border: 1px solid var(--lightgrey);
+        border-radius: 12px;
+        background-color:rgba(255, 141, 141, 0.1);
+        color: var(--grey);
+        padding: 15px 10px;
+        padding-right: 100px;
+        margin: 12px 0px;
+        transform: translateX(0px);
+    }
+
+    .cont-email {
+        font-size: 9.5px;
+        padding: 20px 60px 20px 60px;
+        box-shadow: 0px 2px 15px -9px var(--black);
+    }
+
+    .wellback-content > img {
+        position: absolute;
+        top: -5%;
+        left: 90%;
+        bottom: 25%;
+    }
+
+    .contact-container {
+        padding: 30px 20px 10px 20px;
+        margin: -55px 120px 90px 120px;
+    }
+
+    .contact_us > h1 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    
+    .contact_us > p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .email-us > h2 {
+        font-size: 10px;
+    }
+    
+    .email-us > img {
+        width: 2%;
+        height: 2%;
+    }
+    
+    .d-more {
+        font-size: 11.5px;
+        text-transform: none;
+        margin-bottom: 20px;
+    }
+    
+    .hey > a {
+        font-size: 10.5px;
+        padding: 12px 15px 12px 15px;
+    }    
+  }
+
+  /* Another Size */
+
+
+  @media (min-width: 425px) and (max-width: 479px) {
+    .net-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 107px 20px 107px;
+    }
+
+    .net-div > h2 {
+        font-size: 15px;
+    }
+
+    .net-div > h2 > span {
+        font-size: 22px;
+    }
+
+    .sample {
+        height: 45%;
+        width: 45%;
+        margin: 0px 0px 0px 115px;
+    }
+
+    .container > h1 {
+        text-transform: lowercase;
+        font-size: 22px;
+        margin: -53px 107px 0px 107px;
+    }
+
+
+    .upfile {
+        padding: 15px 40px 15px 40px;
+        margin: -20px 100px 20px 90px;
+    }
+
+    #upfiles {
+        font-size: 16px;
+    }
+
+    
+    .question {
+        padding: 30px 10px 30px 15px;
+        margin: 40px 107px 40px 107px;
+    }
+
+    .question > h1 {
+        font-size: 15.5px;
+        line-height: 0.7;
+        padding-bottom: 10px;
+    }
+
+    .question > h3 {
+        font-size: 7px;
+        padding: 5px 10px 5px 10px;
+        margin: 7px 37px 0px 37px;
+    }
+
+    .chef {
+        width: 11px;
+        height: 14px;
+    }
+
+    .comment-box {
+      margin: 0px 107px 20px 107px;
+    }
+
+    .r-text > p {
+        font-size: 6.5px;
+        line-height: 11px;
+        margin-left: -80px;
+    }
+
+    .profile > img {
+        height: 26%;
+        width: 26%;
+    }
+    
+    .rating > .star {
+        font-size: 6px;
+        margin-left: 6px;
+        color: var(--star);
+    } 
+    
+    .rating > p {
+        font-size: 5.5px;
+        margin-left: -95px;
+ 
+    }
+    
+    .login-button {
+        padding: 11px 17px 13px 17px;
+        margin: 30px 137px 70px 145px;
+    }
+
+    .login-button > a {
+        font-size: 8.5px;
+    }
+    
+    .login-button > a > img {
+        width: 8%;
+        height: 8%;
+        margin: 2.5px 7px 0px 0px;
+    }
+
+    .wellback-content {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        bottom: 30%;
+        width: 355px;
+        max-width: 60%;
+    }
+
+    .wellback-content > h2 {
+        font-size: 21px;
+        margin-top: 17px;
+        cursor: pointer;
+    
+    }
+    
+    .wellback-content > p {
+        font-size: 10px;
+        word-spacing: 0.3px;
+        margin-top: 5px;
+        cursor: pointer;
+    
+    }
+    
+    .wellback-content > input {
+        font-size: 10px;
+        text-transform: lowercase;
+        border: 1px solid var(--lightgrey);
+        border-radius: 12px;
+        background-color:rgba(255, 141, 141, 0.1);
+        color: var(--grey);
+        padding: 15px 10px;
+        padding-right: 100px;
+        margin: 12px 0px;
+        transform: translateX(0px);
+    }
+
+    .cont-email {
+        font-size: 9.5px;
+        padding: 20px 60px 20px 60px;
+        box-shadow: 0px 2px 15px -9px var(--black);
+    }
+
+    .wellback-content > img {
+        position: absolute;
+        top: -5%;
+        left: 90%;
+        bottom: 25%;
+    }
+
+    .contact-container {
+        padding: 30px 20px 10px 20px;
+        margin: -55px 107px 90px 107px;
+    }
+
+    .contact_us > h1 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    
+    .contact_us > p {
+        font-size: 9px;
+        margin-bottom: 20px;
+    }
+
+    .email-us > h2 {
+        font-size: 8px;
+    }
+    
+    .email-us > img {
+        width: 2%;
+        height: 2%;
+    }
+    
+    .d-more {
+        font-size: 8px;
+        text-transform: none;
+        margin-bottom: 20px;
+    }
+    
+    .hey > a {
+        font-size: 10.5px;
+        padding: 10px 15px 12px 15px;
+    }    
+  }
+
+
+  @media (min-width: 375px) and (max-width: 424px) {
+    .net-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 80px 20px 80px;
+    }
+
+    .net-div > h2 {
+        font-size: 15px;
+    }
+
+    .net-div > h2 > span {
+        font-size: 22px;
+    }
+
+    .sample {
+        height: 45%;
+        width: 45%;
+        margin: 0px 0px 0px 105px;
+    }
+
+    .container > h1 {
+        text-transform: lowercase;
+        font-size: 23px;
+        margin: -53px 80px 0px 80px;
+    }
+
+
+    .upfile {
+        padding: 15px 50px 15px 50px;
+        margin: -20px 60px 20px 70px;
+    }
+
+    #upfiles {
+        font-size: 13px;
+    }
+
+    
+    .question {
+        padding: 30px 10px 30px 15px;
+        margin: 40px 80px 40px 80px;
+    }
+
+    .question > h1 {
+        font-size: 15.5px;
+        line-height: 0.7;
+        padding-bottom: 10px;
+    }
+
+    .question > h3 {
+        font-size: 7px;
+        padding: 5px 10px 5px 10px;
+        margin: 7px 37px 0px 37px;
+    }
+
+    .chef {
+        width: 9px;
+        height: 12px;
+    }
+
+    .comment-box {
+        padding: 10px 15px 10px 15px;
+        margin: 0px 80px 20px 80px;
+    }
+
+    .r-text > p {
+        font-size: 6.5px;
+        line-height: 11px;
+        margin-left: -77px;
+    }
+
+    .profile > img {
+        height: 26%;
+        width: 26%;
+    }
+    
+    .rating > .star {
+        font-size: 6px;
+        margin-left: 6px;
+        color: var(--star);
+    } 
+    
+    .rating > p {
+        font-size: 5.5px;
+        margin-left: -95px;
+ 
+    }
+    
+    .login-button {
+        padding: 11px 12px 13px 12px;
+        margin: 30px 110px 70px 130px;
+    }
+
+    .login-button > a {
+        font-size: 8.5px;
+    }
+    
+    .login-button > a > img {
+        width: 8%;
+        height: 8%;
+        margin: 2.5px 7px 0px 0px;
+    }
+
+    .wellback-content {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        bottom: 30%;
+        width: 355px;
+        max-width: 60%;
+    }
+
+    .wellback-content > h2 {
+        font-size: 20px;
+        margin-top: 17px;
+        cursor: pointer;
+    
+    }
+    
+    .wellback-content > p {
+        font-size: 9px;
+        word-spacing: 0.3px;
+        margin-top: 5px;
+        cursor: pointer;
+    
+    }
+    
+    .wellback-content > input {
+        font-size: 10px;
+        text-transform: lowercase;
+        border: 1px solid var(--lightgrey);
+        border-radius: 12px;
+        background-color:rgba(255, 141, 141, 0.1);
+        color: var(--grey);
+        padding: 15px 10px;
+        padding-right: 70px;
+        margin: 12px 0px;
+        transform: translateX(0px);
+    }
+
+    .cont-email {
+        font-size: 9.5px;
+        padding: 20px 45px 20px 45px;
+        box-shadow: 0px 2px 15px -9px var(--black);
+    }
+
+    .wellback-content > img {
+        position: absolute;
+        top: -5%;
+        left: 90%;
+        bottom: 25%;
+    }
+
+    .contact-container {
+        padding: 30px 20px 10px 20px;
+        margin: -55px 80px 90px 80px;
+    }
+
+    .contact_us > h1 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    
+    .contact_us > p {
+        font-size: 9px;
+        margin-bottom: 20px;
+    }
+
+    .email-us > h2 {
+        font-size: 8px;
+    }
+    
+    .email-us > img {
+        width: 2%;
+        height: 2%;
+    }
+    
+    .d-more {
+        font-size: 8px;
+        text-transform: none;
+        margin-bottom: 20px;
+    }
+    
+    .hey > a {
+        font-size: 10.5px;
+        padding: 10px 15px 12px 15px;
+    }    
+  }
+
+  @media (min-width: 320px) and (max-width: 374px) {
+    .net-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 60px 20px 60px;
+    }
+
+    .net-div > h2 {
+        font-size: 15px;
+    }
+
+    .net-div > h2 > span {
+        font-size: 22px;
+    }
+
+    .sample {
+        height: 50%;
+        width: 50%;
+        margin: 0px 0px 0px 80px;
+    }
+
+    .container > h1 {
+        text-transform: lowercase;
+        font-size: 22px;
+        margin: -42px 60px 0px 60px;
+    }
+
+
+    .upfile {
+        padding: 15px 40px 15px 50px;
+        margin: -20px 40px 20px 50px;
+    }
+
+    #upfiles {
+        font-size: 13px;
+    }
+
+    
+    .question {
+        padding: 30px 10px 30px 15px;
+        margin: 40px 60px 40px 60px;
+    }
+
+    .question > h1 {
+        font-size: 15.5px;
+        line-height: 0.7;
+        padding-bottom: 10px;
+    }
+
+    .question > h3 {
+        font-size: 7px;
+        padding: 5px 10px 5px 10px;
+        margin: 7px 32px 0px 32px;
+    }
+
+    .chef {
+        width: 9px;
+        height: 12px;
+    }
+
+    .comment-box {
+        padding: 10px 10px 10px 10px;
+        margin: 0px 60px 20px 60px;
+    }
+
+    .r-text > p {
+        font-size: 6.5px;
+        line-height: 11px;
+        margin-left: -75px;
+    }
+
+    .profile > img {
+        height: 26%;
+        width: 26%;
+    }
+    
+    .rating > .star {
+        font-size: 6px;
+        margin-left: 6px;
+        color: var(--star);
+    } 
+    
+    .rating > p {
+        font-size: 5.5px;
+        margin-left: -95px;
+ 
+    }
+    
+    .login-button {
+        padding: 11px 14px 13px 14px;
+        margin: 30px 87px 70px 95px;
+    }
+
+    .login-button > a {
+        font-size: 8.5px;
+    }
+    
+    .login-button > a > img {
+        width: 8%;
+        height: 8%;
+        margin: 2.5px 7px 0px 0px;
+    }
+
+    .wellback-content {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        bottom: 30%;
+        width: 355px;
+        max-width: 60%;
+    }
+
+    .wellback-content > h2 {
+        font-size: 20px;
+        margin-top: 17px;
+        cursor: pointer;
+    
+    }
+    
+    .wellback-content > p {
+        font-size: 9px;
+        word-spacing: 0.3px;
+        margin-top: 5px;
+        cursor: pointer;
+    
+    }
+    
+    .wellback-content > input {
+        font-size: 10px;
+        text-transform: lowercase;
+        border: 1px solid var(--lightgrey);
+        border-radius: 12px;
+        background-color:rgba(255, 141, 141, 0.1);
+        color: var(--grey);
+        padding: 15px 10px;
+        padding-right: 45px;
+        margin: 12px 0px;
+        transform: translateX(0px);
+    }
+
+    .cont-email {
+        font-size: 9.5px;
+        padding: 20px 33px 20px 33px;
+        box-shadow: 0px 2px 15px -9px var(--black);
+    }
+
+    .wellback-content > img {
+        position: absolute;
+        top: -5%;
+        left: 90%;
+        bottom: 25%;
+    }
+
+    .contact-container {
+        padding: 30px 20px 10px 20px;
+        margin: -55px 60px 90px 60px;
+    }
+
+    .contact_us > h1 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    
+    .contact_us > p {
+        font-size: 9px;
+        margin-bottom: 20px;
+    }
+
+    .email-us > h2 {
+        font-size: 8px;
+    }
+    
+    .email-us > img {
+        width: 2%;
+        height: 2%;
+    }
+    
+    .d-more {
+        font-size: 8px;
+        text-transform: none;
+        margin-bottom: 20px;
+    }
+    
+    .hey > a {
+        font-size: 10.5px;
+        padding: 10px 15px 12px 15px;
+    }    
+  }
+  
