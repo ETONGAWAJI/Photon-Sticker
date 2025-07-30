@@ -37,7 +37,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 52px 475px 24px 475px;
+    margin: 52px 500px 24px 500px;
     padding: 7px 0px 7px 0px;
     background-color: var(--main-color);
     border-radius: 17px;
@@ -96,7 +96,7 @@ body {
     border: none;
     border-radius: 55px;
     cursor: pointer;
-    margin: 0px 460px 20px 450px;
+    margin: 0px 500px 20px 500px;
     padding: 20px 80px 20px 80px;
     box-shadow: 0px 2px 10px -3px var(--button);
     transition: ease-in-out 0.3s;
@@ -147,7 +147,7 @@ body {
     border-radius: 20px;
     box-shadow: 0px 2px 20px -9px var(--black);
     padding: 30px 60px 30px 60px;
-    margin: 40px 445px 40px 445px;
+    margin: 40px 500px 40px 500px;
 }
 
 .question > h1 {
@@ -202,7 +202,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--main-color);
-    margin: 0px 445px 20px 445px;
+    margin: 0px 500px 20px 500px;
     padding: 20px 15px 20px 15px;
     border-radius: 15px;
     box-shadow: 0px 2px 15px -9px var(--black);
@@ -264,7 +264,7 @@ body {
     background-color: var(--main-color);
     border-radius: 25px;
     border: 2px solid var(--lightgrey);
-    margin: 30px 510px 70px 510px;
+    margin: 30px 540px 70px 540px;
     padding: 11px 25px 13px 25px;
 }
 
@@ -414,7 +414,7 @@ body {
     justify-content: center;
     background-color: var(--main-color);
     border-radius: 25px;
-    margin: -55px 445px 90px 445px;
+    margin: -55px 500px 90px 500px;
     padding: 30px 20px 15px 20px;
     box-shadow: 0px 2px 15px -9px var(--black);
 }
