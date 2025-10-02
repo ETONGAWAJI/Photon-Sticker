@@ -39,6 +39,14 @@
     <!-- Login-Popup End  -->
 
     <script src="gen.js"></script>
+
+    <!-- In generate.html, add before </body> -->
+<script src="api-integration.js"></script>
+<script>
+    // Connect your upload button to the API
+    document.getElementById('upfiles').addEventListener('click', handleUploadSubmit);
+</script>
     
 </body>
+
 </html>
