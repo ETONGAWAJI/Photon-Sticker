@@ -94,7 +94,7 @@
         
 <a href="#">
 
-    <div class="pay-container">
+    <div class="pay-container" id="payBtn">
        <img class="card" src="card-svgrepo-com.png" alt="#">
 
        <p class="pay"> Pay securely with Card </p>
@@ -106,6 +106,20 @@
     </div>
 
     <script src="payway.js"></script>
+
+    <!-- In payway.html, add before </body> -->
+<script src="api-integration.js"></script>
+<script>
+    // Initialize payment page when it loads
+    window.addEventListener('DOMContentLoaded', initPaymentPage);
+    
+    // Connect your payment button
+    document.getElementById('payBtn').addEventListener('click', function() {
+        const email = document.getElementById('emailInput').value;
+        handlePaymentSubmit(email);
+    });
+</script>
     
 </body>
+
 </html>
