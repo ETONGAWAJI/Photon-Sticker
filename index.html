@@ -38,7 +38,7 @@
         </div>
 
         
-            <button class="upfile" id="upfiles" onclick="document.getElementById('upfile').click(); return false;"> click here to upload! 
+            <button class="upfile" id="upfiles" onsubmit="handleUploadSubmit(event)" onclick="document.getElementById('upfile').click(); return false;"> click here to upload! 
             </button>
             <input type="file" id="upfile" name="upfile" hidden>
             <div class="uploadedFiles"></div>
@@ -172,3 +172,4 @@
 </body>
 
 </html>
+
