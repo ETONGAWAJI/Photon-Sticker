@@ -50,5 +50,19 @@ exit.addEventListener('click', () => {
   document.getElementById('wellback').classList.remove('show');
 });
 
+const fileInput = document.getElementById('upfile');
+
+    fileInput.addEventListener('change', (e) => {
+      const file = fileInput.files[0];
+      const reader = new FileReader();
+
+      reader.onload = () => {
+        const imageData = reader.result;
+        localStorage.setItem('imageData', imageData);
+        window.location.href = 'generate.html';
+      };
+
+      reader.readAsDataURL(file);
+    });
 
 
