@@ -89,9 +89,9 @@ body {
 
 .loader-container {
   position: relative;
-  width: 350px;
+  width: 270px;
   height: 13px;
-  margin: 30px 0 30px 150px;
+  margin: 30px 0 30px 470px;
 
 }
 
@@ -126,7 +126,6 @@ body {
     width: 100%;
   }
 }
-
 
 /* Login-popup starts  */
 
@@ -1326,6 +1325,7 @@ body {
     
     /* Login-popup ends  */
 }
+
 
 
 
