@@ -294,7 +294,7 @@ function initPaymentPage() {
     
     if (!stickerId) {
         alert('No sticker found. Please upload an image first.');
-        window.location.href = '/';
+        window.location.href = '/payway.html';
         return;
     }
 
@@ -313,4 +313,5 @@ window.uploadImage = uploadImage;
 window.handleUploadSubmit = handleUploadSubmit;
 window.handlePaymentSubmit = handlePaymentSubmit;
 window.initPaymentPage = initPaymentPage;
+
 window.downloadSticker = downloadSticker;
