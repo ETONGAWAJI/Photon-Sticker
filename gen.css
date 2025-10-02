@@ -91,7 +91,7 @@ body {
   position: relative;
   width: 350px;
   height: 13px;
-  margin: 30px 0 30px 50px;
+  margin: 30px 0 30px 150px;
 
 }
 
@@ -1326,5 +1326,6 @@ body {
     
     /* Login-popup ends  */
 }
+
 
 
