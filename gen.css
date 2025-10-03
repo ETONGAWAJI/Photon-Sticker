@@ -140,7 +140,7 @@ body {
     margin-top: 230px;
     opacity: 0;
     /* visibility: hidden; */
-    z-index: 0;
+    z-index: 3;
 }
 
 .gen-wellback-content {
@@ -1325,6 +1325,7 @@ body {
     
     /* Login-popup ends  */
 }
+
 
 
 
