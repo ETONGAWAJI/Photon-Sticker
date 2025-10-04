@@ -127,6 +127,7 @@ body {
   }
 }
 
+
 /* Login-popup starts  */
 
 .gen-wellback {
@@ -282,6 +283,14 @@ body {
         color: var(--star);
         font-size: 16px;
     }
+
+    .loader-container {
+    position: relative;
+    width: 320px;
+    height: 13px;
+    margin: 30px 0 30px 470px;
+
+    }
     
     /* Login-popup starts  */
     
@@ -296,7 +305,7 @@ body {
         margin-top: 240px;
         opacity: 0;
         /* visibility: hidden; */
-        z-index: 0;
+        z-index: 3;
     }
     
     .gen-wellback-content {
@@ -448,6 +457,14 @@ body {
     color: var(--star);
     font-size: 16px;
 }
+
+.loader-container {
+    position: relative;
+    width: 290px;
+    height: 13px;
+    margin: 30px 0 30px 470px;
+
+    }
 
 /* Login-popup starts  */
 
@@ -603,6 +620,15 @@ body {
         color: var(--star);
         font-size: 16px;
     }
+
+    .loader-container {
+    position: relative;
+    width: 250px;
+    height: 13px;
+    margin: 30px 0 30px 265px;
+
+    }
+
     
     /* Login-popup starts  */
     
@@ -617,7 +643,7 @@ body {
         margin-top: 80px;
         opacity: 0;
         /* visibility: hidden; */
-        z-index: 0;
+        z-index: 3;
     }
     
     .gen-wellback-content {
@@ -910,6 +936,22 @@ body {
         color: var(--star);
         font-size: 16px;
     }
+
+    .loader-container {
+    position: relative;
+    width: 250px;
+    height: 13px;
+    margin: 30px 0 30px 50px;
+
+    }
+
+     .loader-container {
+    position: relative;
+    width: 220px;
+    height: 13px;
+    margin: 30px 0 30px 100px;
+
+    }
     
     /* Login-popup starts  */
     
@@ -924,7 +966,7 @@ body {
         margin-top: 50px;
         opacity: 0;
         /* visibility: hidden; */
-        z-index: 0;
+        z-index: 3;
     }
     
     .gen-wellback-content {
@@ -1061,6 +1103,14 @@ body {
         color: var(--star);
         font-size: 16px;
     }
+
+    .loader-container {
+    position: relative;
+    width: 220px;
+    height: 13px;
+    margin: 30px 0 30px 100px;
+
+    }
     
     /* Login-popup starts  */
     
@@ -1075,7 +1125,7 @@ body {
         margin-top: 120px;
         opacity: 0;
         /* visibility: hidden; */
-        z-index: 0;
+        z-index: 3;
     }
     
     .gen-wellback-content {
@@ -1212,6 +1262,14 @@ body {
         color: var(--star);
         font-size: 14px;
     }
+
+    .loader-container {
+    position: relative;
+    width: 180px;
+    height: 13px;
+    margin: 30px 0 30px 90px;
+
+    }
     
     /* Login-popup starts  */
     
@@ -1226,7 +1284,7 @@ body {
         margin-top: 80px;
         opacity: 0;
         /* visibility: hidden; */
-        z-index: 0;
+        z-index: 3;
     }
     
     .gen-wellback-content {
@@ -1325,8 +1383,4 @@ body {
     
     /* Login-popup ends  */
 }
-
-
-
-
 
