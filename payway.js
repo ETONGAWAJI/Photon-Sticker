@@ -29,6 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
   startTimer();
 });
 
+// Image Retrieval 
+const imageData = localStorage.getItem('imageData');
+
+    if (imageData) {
+      document.getElementById('uploadedImage').src = imageData;
+    }
+
+
 
 
 
