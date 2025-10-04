@@ -23,3 +23,10 @@ document.getElementById('gen-exit').addEventListener('click', hidePopup);
     if (imageData) {
       document.getElementById('uploadedImage').src = imageData;
     }
+
+// Transition into payway.html
+
+setTimeout(() => {
+  window.location.href = 'payway.html';
+}, 27000);
+
