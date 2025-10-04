@@ -54,6 +54,7 @@ body {
     width: 20%;
     border-radius: 25px;
     margin: 0px 0px 0px 480px;
+    filter: blur(12.5px);
 }
 
 .lock {
@@ -1734,5 +1735,6 @@ strong {
 }
 
 }
+
 
 
